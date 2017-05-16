@@ -66,46 +66,40 @@ echo "$start_tag
         Options None
         AllowOverride None
         DirectoryIndex index.php
-        Order Allow,Deny
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/*>
-        Deny from all
+        Require all denied
         </Directory>
         <Directory /usr/local/squirrelmail/www/scripts>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/images>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/plugins>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/src>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/templates>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/themes>
-        Allow from all
+        Require all granted
         </Directory>
         <Directory /usr/local/squirrelmail/www/contrib>
-        Order Deny,Allow
-        Deny from All
-        Allow from 127
-        Allow from 10
-        Allow from 192
+        Require ip 127
+        Require ip 10
+        Require ip 192
         </Directory>
         <Directory /usr/local/squirrelmail/www/doc>
         Order Deny,Allow
-        Deny from All
-        Allow from 127
-        Allow from 10
-        Allow from 192
+        Require ip 127
+        Require ip 10
+        Require ip 192
         </Directory>
 </VirtualHost>
 
 $end_tag" | sudo tee -a "$httpd_conf"
-
-
