@@ -1,3 +1,9 @@
 Important setup details can be found here.
 
 Visit https://avix.co/blog/creating-your-own-mail-server-amazon-ec2-postfix-dovecot-postgresql-amavis-spamassassin-apache-and-squirrelmail-part-1/ for more info on how to setup your own mail server (using this script).
+
+When following directions on page 2 of this post, instead of the github link posted there, use
+
+https://github.com/bobsawyer/Mail-Server-Script.git
+
+to pull this updated script.
