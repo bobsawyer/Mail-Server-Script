@@ -4,7 +4,7 @@
 ###Welcome to the apache setup script. Any variables that may need to be adjusted should be changed in the designated "variables" section in the main script.
 #-----------------------------------------#
 
-sudo $package_manager install httpd mod_ssl -y
+sudo $package_manager install httpd24 mod24_ssl -y
 
 httpd_secure=(SSLCertificateFile SSLCertificateKeyFile SSLProtocol)
 
