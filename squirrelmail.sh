@@ -4,7 +4,7 @@
 ###Welcome to the squirrelmail setup script. Any variables that may need to be adjusted should be changed in the designated "variables" section in the main script, super.sh.
 #-----------------------------------------#
 
-sudo $package_manager install php -y
+sudo $package_manager install php56 -y
 
 sudo wget "http://downloads.sourceforge.net/project/squirrelmail/stable/$squirrel_mail_v/squirrelmail-webmail-$squirrel_mail_v.zip"
 
